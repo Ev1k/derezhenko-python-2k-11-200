@@ -31,6 +31,3 @@ while True:
     print("- " + str(minus_operations))
     print("* " + str(con_operations))
     print("/ " + str(div_operations))
-
-
-
