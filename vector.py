@@ -19,4 +19,7 @@ class Vector:
 a = Vector(1, 3)
 b = Vector(2, 4)
 result = a * b
-print(result)
+result1 = a + b
+result2 = a - b
+print(str(a))
+print(result, result1, result2)
