@@ -4,16 +4,13 @@ class Vector:
         self.y = y
 
     def __add__(self, other):
-        result = Vector(self.x + other.x, self.y + other.y)
-        return result
+        return Vector(self.x + other.x, self.y + other.y)
 
     def __sub__(self, other):
-        result = Vector(self.x - other.x, self.y - other.y)
-        return result
+        return Vector(self.x - other.x, self.y - other.y)
 
     def __mul__(self, other):
-        result = self.x * other.x + self.y * other.y
-        return result
+        return self.x * other.x + self.y * other.y
 
     def __str__(self):
         return f"({self.x}, {self.y})"
