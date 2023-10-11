@@ -3,10 +3,7 @@ import requests
 
 response = requests.get("https://yandex.ru/pogoda/")
 tree = bs4.BeautifulSoup(response.text, 'html.parser')
-print(response.status_code)
-print(tree)
-
-print("текущая погода: ", tree.select_one('.fact__temp-wrap').text.strip().strip())
+print("текущая погода: ", tree.find('.fact__temp-wrap').text.strip())
 # print(tree.select_one('.link__feelings.fact__feelings').text.strip())
 
 week = tree.find('.forecast-briefly__days').findAll('.forecast-briefly__day')
