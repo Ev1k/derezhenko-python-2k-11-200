@@ -6,6 +6,3 @@ if not (response.json().__contains__("country")):
     print("Такого IP не существует")
 else:
     print(response.json()["country"])
-
-
-
