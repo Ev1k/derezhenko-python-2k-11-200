@@ -1,5 +1,5 @@
 import pytest
-from multiprocessing import normalization
+from multiprocess import normalization
 
 
 @pytest.mark.parametrize("href, expected_result", [
