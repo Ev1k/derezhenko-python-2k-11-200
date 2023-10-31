@@ -172,4 +172,8 @@ cython_debug/
 .idea/
 !requirements.txt
 
+*.txt
+!requirements.txt
+
+
 # End of https://www.toptal.com/developers/gitignore/api/django
